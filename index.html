@@ -1,0 +1,1036 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>
+        
+        BDM Camp Tools
+    </title>
+    <link rel="icon" href="images/logo/logo.png">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+
+    <!-- Image and text -->
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            <img src="https://uppic.cc/d/6tKQ" width="30" height="30" class="d-inline-block align-top" alt="">
+            | BDM Camp Tools
+        </a>
+    </nav>
+
+    <div class="container col-12 background_after_nav">
+        <div style="height: 20px;"></div>
+    </div>
+
+
+    <ul class="nav nav-tabs color_bg_nav_item col-12" id="myTab" role="tablist" style="text-align: center;">
+
+        <li class="nav-item col-4">
+            <a class="nav-link active" id="show_result_tab" data-toggle="tab" href="#show_result" role="tab"
+                aria-controls="home" aria-selected="true">แสดงผล</a>
+        </li>
+
+        <li class="nav-item col-4">
+            <a class="nav-link" id="add_camp_information_tab" data-toggle="tab" href="#add_camp_information" role="tab"
+                aria-controls="profile" aria-selected="false">เพิ่มข้อมูลค่าย</a>
+        </li>
+
+        <li class="nav-item col-4">
+            <a class="nav-link" id="add_resource_infomation" data-toggle="tab" href="#add_resource_information"
+                role="tab" aria-controls="contact" aria-selected="false">เพิ่มข้อมูลทรัพยากร</a>
+        </li>
+
+    </ul>
+
+
+
+    <div class="tab-content" id="myTabContent">
+        <!-- แสดงผล -->
+        <div class="tab-pane fade show active edit_font_add_camp_infor container container-fluid " id="show_result" role="tabpanel" aria-labelledby="home-tab">
+           
+
+            <div class="row mt-5">
+                <div class="row col-3" style="background-color: white;height: 250px;">
+
+                    <div class="row" style="height: 20px;margin-left: 50px;">
+                        <div class="card" style="width: 10rem;text-align: center;">
+                            <img src="https://uppic.cc/d/6trP" class="card-img-top" alt="">
+                            <div class="card-body">
+                              <p class="card-text">ฐานบัญชาการ</p>
+                              <p class="card-text" id="demo">อัพเกรด</p>
+                            </div>
+                          </div>
+                    </div>
+
+                </div>
+
+                <div class="row col-9 ml-3 font_size_edit">
+                    <div class="row col-12 ml-5" style="background-color: white;height: 200px;">
+
+                        <div class="card ml-3 mt-2" style="width: 7rem;">
+                            <div class="card-header" style="text-align: center;">
+                              โรงแปรธาตุ
+                            </div>
+                            <ul class="list-group list-group-flush" style="text-align: center;">
+                              <li class="list-group-item edit_color e" id="value_prae">Lv.</li>
+                            </ul>
+                        </div>
+
+                        <div class="card ml-3 mt-2" style="width: 7rem;">
+                            <div class="card-header" style="text-align: center;">
+                              โรงสกัด
+                            </div>
+                            <ul class="list-group list-group-flush" style="text-align: center;">
+                              <li class="list-group-item edit_color" id="value_skud">Lv.</li>
+                            </ul>
+                        </div>
+
+                        <div class="card ml-3 mt-2" style="width: 7rem;">
+                            <div class="card-header" style="text-align: center;">
+                              โรงกลั่น
+                            </div>
+                            <ul class="list-group list-group-flush" style="text-align: center;">
+                              <li class="list-group-item edit_color" id="value_grun">Lv.</li>
+                            </ul>
+                        </div>
+
+                        <div class="card ml-3 mt-2" style="width: 7rem;">
+                            <div class="card-header" style="text-align: center;">
+                              โรงตกแต่ง
+                            </div>
+                            <ul class="list-group list-group-flush" style="text-align: center;">
+                              <li class="list-group-item edit_color" id="value_toh">Lv.</li>
+                            </ul>
+                        </div>
+
+                        <div class="card ml-3 mt-2" style="width: 7rem;">
+                            <div class="card-header" style="text-align: center;">
+                              คลังเสบียง
+                            </div>
+                            <ul class="list-group list-group-flush" style="text-align: center;">
+                              <li class="list-group-item edit_color" id="value_sbaing">Lv.</li>
+                            </ul>
+                        </div>
+
+                        <div class="card ml-3 mt-2" style="width: 7rem;">
+                            <div class="card-header" style="text-align: center;">
+                              โรงการค้า
+                            </div>
+                            <ul class="list-group list-group-flush" style="text-align: center;">
+                              <li class="list-group-item edit_color" id="value_kanka">Lv.</li>
+                            </ul>
+                        </div>
+
+                        <div class="card ml-3 mt-2" style="width: 7rem;">
+                            <div class="card-header" style="text-align: center;">
+                              โรงอุปกรณ์
+                            </div>
+                            <ul class="list-group list-group-flush" style="text-align: center;">
+                              <li class="list-group-item edit_color" id="value_oub">Lv.</li>
+                            </ul>
+                        </div>
+
+                        <div class="card ml-3 mt-2" style="width: 7rem;">
+                            <div class="card-header" style="text-align: center;">
+                              คลังเก็บของ
+                            </div>
+                            <ul class="list-group list-group-flush" style="text-align: center;">
+                              <li class="list-group-item edit_color" id="value_kong">Lv.</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="card ml-3 mt-2" style="width: 7rem;">
+                            <div class="card-header" style="text-align: center;">
+                              คอกปสุสัตว์
+                            </div>
+                            <ul class="list-group list-group-flush" style="text-align: center;">
+                              <li class="list-group-item edit_color" id="value_pasusus">Lv.</li>
+                            </ul>
+                        </div>
+
+                        <div class="card ml-3 mt-2" style="width: 7rem;">
+                            <div class="card-header" style="text-align: center;">
+                              คอกม้า
+                            </div>
+                            <ul class="list-group list-group-flush" style="text-align: center;">
+                              <li class="list-group-item edit_color" id="value_kogma">Lv.</li>
+                            </ul>
+                        </div>
+
+                        <div class="card ml-3 mt-2" style="width: 7rem;">
+                            <div class="card-header" style="text-align: center;">
+                              ที่พัก
+                            </div>
+                            <ul class="list-group list-group-flush" style="text-align: center;">
+                              <li class="list-group-item edit_color" id="value_teepuk">Lv.</li>
+                            </ul>
+                        </div>
+
+                        
+
+                    </div>
+                </div>
+            </div>
+
+            <hr style="border-width: 3px;height: auto;">
+
+            <table class="table font_size_edit">
+                <thead class="thead-light" style="text-align: center;">
+                  <tr>
+                    <th scope="col"></th>
+                    <th scope="col">
+                        <img src="https://uppic.cc/d/6t6x" width="40" height="40" alt="" srcset="">
+                    </th>
+                    <th scope="col">
+                        <img src="https://uppic.cc/d/6tHb" width="40" height="40" alt="" srcset="">
+                    </th>
+                    <th scope="col">
+                        <img src="https://uppic.cc/d/6tHv" width="40" height="40" alt="" srcset="">
+                    </th>
+                    <th scope="col">
+                        <img src="https://uppic.cc/d/6tHP" width="40" height="40" alt="" srcset="">
+                    </th>
+                    <th scope="col">
+                        <img src="https://uppic.cc/d/6tHQ" width="40" height="40" alt="" srcset="">
+                    </th>
+                    <th scope="col">
+                        <img src="https://uppic.cc/d/6tHR" width="40" height="40" alt="" srcset="">
+                    </th>
+                    <th scope="col">
+                        <img src="https://uppic.cc/d/6tHS" width="40" height="40" alt="" srcset="">
+                    </th>
+                    <th scope="col">
+                        <img src="https://uppic.cc/d/6tH4" width="40" height="40" alt="" srcset="">
+                    </th>
+                    <th scope="col">
+                        <img src="https://uppic.cc/d/6tHZ" width="40" height="40" alt="" srcset="">
+                    </th>
+                    <th scope="col">
+                        <img src="https://uppic.cc/d/6tHN" width="40" height="40" alt="" srcset="">
+                    </th>
+                    <th scope="col">
+                        <img src="https://uppic.cc/d/6tHr" width="40" height="40" alt="" srcset="">
+                    </th>
+                    <th scope="col">
+                        <img src="https://uppic.cc/d/6tHs" width="40" height="40" alt="" srcset="">
+                    </th>
+        
+        
+                  </tr>
+                </thead>
+
+                <tbody style="text-align: center;">
+                  <tr>
+                    <th scope="row">ฐานบัญชาการ</th>
+                    <td id="tan_hin"></td>
+                    <td id="tan_lek"></td>
+                    <td id="tan_tongdang"></td>
+                    <td id="tan_deebook"></td>
+                    <td id="tan_maisung"></td>
+                    <td id="tan_maiboa"></td>
+                    <td id="tan_maiyun"></td>
+                    <td id="tan_mainoop"></td>
+                    <td id="tan_pan"></td>
+                    <td id="tan_sumlee"></td>
+                    <td id="tan_yapa"></td>
+                    <td id="tan_rangmai"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">คลังเก็บของ</th>
+                    <td id="kong_hin"></td>
+                    <td id="kong_lek"></td>
+                    <td id="kong_tongdang"></td>
+                    <td id="kong_deebook"></td>
+                    <td id="kong_maisung"></td>
+                    <td id="kong_maiboa"></td>
+                    <td id="kong_maiyun"></td>
+                    <td id="kong_mainoop"></td>
+                    <td id="kong_pan"></td>
+                    <td id="kong_sumlee"></td>
+                    <td id="kong_yapa"></td>
+                    <td id="kong_rangmai"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">โรงแปรธาตุ</th>
+                    <td id="prae_hin"></td>
+                    <td id="prae_lek"></td>
+                    <td id="prae_tongdang"></td>
+                    <td id="prae_deebook"></td>
+                    <td id="prae_maisung"></td>
+                    <td id="prae_maiboa"></td>
+                    <td id="prae_maiyun"></td>
+                    <td id="prae_mainoop"></td>
+                    <td id="prae_pan"></td>
+                    <td id="prae_sumlee"></td>
+                    <td id="prae_yapa"></td>
+                    <td id="prae_rangmai"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">โรงสกัด</th>
+                    <td id="skud_hin"></td>
+                    <td id="skud_lek"></td>
+                    <td id="skud_tongdang"></td>
+                    <td id="skud_deebook"></td>
+                    <td id="skud_maisung"></td>
+                    <td id="skud_maiboa"></td>
+                    <td id="skud_maiyun"></td>
+                    <td id="skud_mainoop"></td>
+                    <td id="skud_pan"></td>
+                    <td id="skud_sumlee"></td>
+                    <td id="skud_yapa"></td>
+                    <td id="skud_rangmai"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">โรงกลั่น</th>
+                    <td id="grun_hin"></td>
+                    <td id="grun_lek"></td>
+                    <td id="grun_tongdang"></td>
+                    <td id="grun_deebook"></td>
+                    <td id="grun_maisung"></td>
+                    <td id="grun_maiboa"></td>
+                    <td id="grun_maiyun"></td>
+                    <td id="grun_mainoop"></td>
+                    <td id="grun_pan"></td>
+                    <td id="grun_sumlee"></td>
+                    <td id="grun_yapa"></td>
+                    <td id="grun_rangmai"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">โรงงานตกแต่ง</th>
+                    <td id="toh_hin"></td>
+                    <td id="toh_lek"></td>
+                    <td id="toh_tongdang"></td>
+                    <td id="toh_deebook"></td>
+                    <td id="toh_maisung"></td>
+                    <td id="toh_maiboa"></td>
+                    <td id="toh_maiyun"></td>
+                    <td id="toh_mainoop"></td>
+                    <td id="toh_pan"></td>
+                    <td id="toh_sumlee"></td>
+                    <td id="toh_yapa"></td>
+                    <td id="toh_rangmai"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">ตลังเก็บเสบียง</th>
+                    <td id="sbaing_hin"></td>
+                    <td id="sbaing_lek"></td>
+                    <td id="sbaing_tongdang"></td>
+                    <td id="sbaing_deebook"></td>
+                    <td id="sbaing_maisung"></td>
+                    <td id="sbaing_maiboa"></td>
+                    <td id="sbaing_maiyun"></td>
+                    <td id="sbaing_mainoop"></td>
+                    <td id="sbaing_pan"></td>
+                    <td id="sbaing_sumlee"></td>
+                    <td id="sbaing_yapa"></td>
+                    <td id="sbaing_rangmai"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">โรงอุปกรณ์</th>
+                    <td id="oub_hin"></td>
+                    <td id="oub_lek"></td>
+                    <td id="oub_tongdang"></td>
+                    <td id="oub_deebook"></td>
+                    <td id="oub_maisung"></td>
+                    <td id="oub_maiboa"></td>
+                    <td id="oub_maiyun"></td>
+                    <td id="oub_mainoop"></td>
+                    <td id="oub_pan"></td>
+                    <td id="oub_sumlee"></td>
+                    <td id="oub_yapa"></td>
+                    <td id="oub_rangmai"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">ที่พัก</th>
+                    <td id="teepuk_hin"></td>
+                    <td id="teepuk_lek"></td>
+                    <td id="teepuk_tongdang"></td>
+                    <td id="teepuk_deebook"></td>
+                    <td id="teepuk_maisung"></td>
+                    <td id="teepuk_maiboa"></td>
+                    <td id="teepuk_maiyun"></td>
+                    <td id="teepuk_mainoop"></td>
+                    <td id="teepuk_pan"></td>
+                    <td id="teepuk_sumlee"></td>
+                    <td id="teepuk_yapa"></td>
+                    <td id="teepuk_rangmai"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">คอกม้า</th>
+                    <td id="kogma_hin"></td>
+                    <td id="kogma_lek"></td>
+                    <td id="kogma_tongdang"></td>
+                    <td id="kogma_deebook"></td>
+                    <td id="kogma_maisung"></td>
+                    <td id="kogma_maiboa"></td>
+                    <td id="kogma_maiyun"></td>
+                    <td id="kogma_mainoop"></td>
+                    <td id="kogma_pan"></td>
+                    <td id="kogma_sumlee"></td>
+                    <td id="kogma_yapa"></td>
+                    <td id="kogma_rangmai"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">คอกปสุสัตว์</th>
+                    <td id="pasusus_hin"></td>
+                    <td id="pasusus_lek"></td>
+                    <td id="pasusus_tongdang"></td>
+                    <td id="pasusus_deebook"></td>
+                    <td id="pasusus_maisung"></td>
+                    <td id="pasusus_maiboa"></td>
+                    <td id="pasusus_maiyun"></td>
+                    <td id="pasusus_mainoop"></td>
+                    <td id="pasusus_pan"></td>
+                    <td id="pasusus_sumlee"></td>
+                    <td id="pasusus_yapa"></td>
+                    <td id="pasusus_rangmai"></td>
+                  </tr>
+                </tbody>
+              </table>
+
+
+            <hr style="border-width: 3px;height: auto;">
+
+            <table class="table font_size_edit">
+                <thead class="thead-light" style="text-align: center;">
+                    <tr>
+                      <th scope="col">
+                        <select class="form-control font_size_edit" onchange="change_update_resource()" style="background-color: rgb(34, 34, 34);color: aliceblue;width: 130px;text-align: center;" id="change_select">
+                            <option>สิ่งก่อสร้าง</option>
+                            <option value="ฐานบัญชาการ">ฐานบัญชาการ</option>
+                            <option value="คลังเก็บของ">คลังเก็บของ</option>
+                            <option value="โรงแปรธาตุ">โรงแปรธาตุ</option>
+                            <option value="โรงสกัด">โรงสกัด</option>
+                            <option value="โรงกลั่น">โรงกลั่น</option>
+                            <option value="โรงงานตกแต่ง">โรงงานตกแต่ง</option>
+                            <option value="คลังเก็บเสบียง">คลังเก็บเสบียง</option>
+                            <option value="โรงอุปกรณ์">โรงอุปกรณ์</option>
+                            <option value="ที่พัก">ที่พัก</option>
+                            <option value="คอกม้า">คอกม้า</option>
+                            <option value="คอกปสุสัตว์">คอกปสุสัตว์</option>
+                        </select>
+                      </th>
+                      <th scope="col">
+                          <img src="https://uppic.cc/d/6t6x" width="40" height="40" alt="" srcset="">
+                      </th>
+                      <th scope="col">
+                          <img src="https://uppic.cc/d/6tHb" width="40" height="40" alt="" srcset="">
+                      </th>
+                      <th scope="col">
+                          <img src="https://uppic.cc/d/6tHv" width="40" height="40" alt="" srcset="">
+                      </th>
+                      <th scope="col">
+                          <img src="https://uppic.cc/d/6tHP" width="40" height="40" alt="" srcset="">
+                      </th>
+                      <th scope="col">
+                          <img src="https://uppic.cc/d/6tHQ" width="40" height="40" alt="" srcset="">
+                      </th>
+                      <th scope="col">
+                          <img src="https://uppic.cc/d/6tHR" width="40" height="40" alt="" srcset="">
+                      </th>
+                      <th scope="col">
+                          <img src="https://uppic.cc/d/6tHS" width="40" height="40" alt="" srcset="">
+                      </th>
+                      <th scope="col">
+                          <img src="https://uppic.cc/d/6tH4" width="40" height="40" alt="" srcset="">
+                      </th>
+                      <th scope="col">
+                          <img src="https://uppic.cc/d/6tHZ" width="40" height="40" alt="" srcset="">
+                      </th>
+                      <th scope="col">
+                          <img src="https://uppic.cc/d/6tHN" width="40" height="40" alt="" srcset="">
+                      </th>
+                      <th scope="col">
+                          <img src="https://uppic.cc/d/6tHr" width="40" height="40" alt="" srcset="">
+                      </th>
+                      <th scope="col">
+                          <img src="https://uppic.cc/d/6tHs" width="40" height="40" alt="" srcset="">
+                      </th>
+
+                    </tr>
+                  </thead>
+
+                <tbody  class="font_size_edit" style="text-align: center;">
+                  <tr>
+                    <th scope="row">ใส่จำนวนคาดการณ์</th>
+                    <td>
+                        <input class="form-control" type="text"  id="new_value_hin" style="width: 50px;height: 40px;text-align: center;font-size: 10px;">
+                    </td>
+                    <td>
+                        <input class="form-control" type="text"  id="new_value_lek" style="width: 50px;height: 40px;text-align: center;font-size: 10px;">
+                    </td>
+                    <td>
+                        <input class="form-control" type="text"  id="new_value_tongdang" style="width: 50px;height: 40px;text-align: center;font-size: 10px;">
+                    </td>
+                    <td>
+                        <input class="form-control" type="text"  id="new_value_deebook" style="width: 50px;height: 40px;text-align: center;font-size: 10px;">
+                    </td>
+                    <td>
+                        <input class="form-control" type="text"  id="new_value_maisung" style="width: 50px;height: 40px;text-align: center;font-size: 10px;">
+                    </td>
+                    <td>
+                        <input class="form-control" type="text"  id="new_value_maiboa" style="width: 50px;height: 40px;text-align: center;font-size: 10px;">
+                    </td>
+                    <td>
+                        <input class="form-control" type="text"  id="new_value_maiyun" style="width: 50px;height: 40px;text-align: center;font-size: 10px;">
+                    </td>
+                    <td>
+                        <input class="form-control" type="text"  id="new_value_mainoop" style="width: 50px;height: 40px;text-align: center;font-size: 10px;">
+                    </td>
+                    <td>
+                        <input class="form-control" type="text"  id="new_value_pan" style="width: 50px;height: 40px;text-align: center;font-size: 10px;">
+                    </td>
+                    <td>
+                        <input class="form-control" type="text"  id="new_value_sumlee" style="width: 50px;height: 40px;text-align: center;font-size: 10px;">
+                    </td>
+                    <td>
+                        <input class="form-control" type="text"  id="new_value_yapa" style="width: 50px;height: 40px;text-align: center;font-size: 10px;">
+                    </td>
+                    <td>
+                        <input class="form-control" type="text"  id="new_value_rangmai" style="width: 50px;height: 40px;text-align: center;font-size: 10px;">
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            
+
+        </div>
+
+        <!-- เพิ่มข้อมูลค่าย -->
+        <div class="tab-pane fade container edit_font_add_camp_infor" id="add_camp_information" role="tabpanel" aria-labelledby="profile-tab">
+
+            <div class="row row-cols-1 row-cols-md-2 mt-4">
+
+                <div class="col mb-2">
+                    <div class="card" style="width: 10rem;background-color: rgb(247, 247, 247);">
+                        <img src="https://uppic.cc/d/6sGB" class="card-img-top" alt="">
+                        <div class="card-body" style="text-align: center;">
+                            <p class="card-text">ฐานบัญชาการ</p>
+                            <div class="form-group">
+                                <select class="form-control" style="background-color: rgb(34, 34, 34);color: aliceblue;"  id="tan_select">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="col mb-2">
+                    <div class="card" style="width: 10rem;background-color: rgb(247, 247, 247);">
+                        <img src="https://uppic.cc/d/6sGU" class="card-img-top" alt="">
+                        <div class="card-body" style="text-align: center;">
+                            <p class="card-text">โรงแปรธาตุ</p>
+                            <div class="form-group">
+                                <select class="form-control" style="background-color: rgb(34, 34, 34);color: aliceblue;" id="prae_select">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                  <option value="2">2</option>
+                                  <option value="3">3</option>
+                                  <option value="4">4</option>
+                                  <option value="5">5</option>
+                                  <option value="6">6</option>
+                                  <option value="7">7</option>
+                                  <option value="8">8</option>
+                                  <option value="9">9</option>
+                                  <option value="10">10</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col mb-2">
+                    <div class="card" style="width: 10rem;background-color: rgb(247, 247, 247);">
+                        <img src="https://uppic.cc/d/6sGz" class="card-img-top" alt="">
+                        <div class="card-body" style="text-align: center;">
+                            <p class="card-text">โรงสกัด</p>
+                            <div class="form-group">
+                                <select class="form-control" style="background-color: rgb(34, 34, 34);color: aliceblue;" id="skud_select">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                  <option value="2">2</option>
+                                  <option value="3">3</option>
+                                  <option value="4">4</option>
+                                  <option value="5">5</option>
+                                  <option value="6">6</option>
+                                  <option value="7">7</option>
+                                  <option value="8">8</option>
+                                  <option value="9">9</option>
+                                  <option value="10">10</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col mb-2">
+                    <div class="card" style="width: 10rem;background-color: rgb(247, 247, 247);">
+                        <img src="https://uppic.cc/d/6sGq" class="card-img-top" alt="">
+                        <div class="card-body" style="text-align: center;">
+                            <p class="card-text">โรงกลั่น</p>
+                            <div class="form-group">
+                                <select class="form-control" style="background-color: rgb(34, 34, 34);color: aliceblue;" id="grun_select">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                  <option value="2">2</option>
+                                  <option value="3">3</option>
+                                  <option value="4">4</option>
+                                  <option value="5">5</option>
+                                  <option value="6">6</option>
+                                  <option value="7">7</option>
+                                  <option value="8">8</option>
+                                  <option value="9">9</option>
+                                  <option value="10">10</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col mb-2">
+                    <div class="card" style="width: 10rem;background-color: rgb(247, 247, 247);">
+                        <img src="https://uppic.cc/d/6sGX" class="card-img-top" alt="">
+                        <div class="card-body" style="text-align: center;">
+                            <p class="card-text">โรงงานตกแต่ง</p>
+                            <div class="form-group">
+                                <select class="form-control" style="background-color: rgb(34, 34, 34);color: aliceblue;" id="toh_select">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                  <option value="2">2</option>
+                                  <option value="3">3</option>
+                                  <option value="4">4</option>
+                                  <option value="5">5</option>
+                                  <option value="6">6</option>
+                                  <option value="7">7</option>
+                                  <option value="8">8</option>
+                                  <option value="9">9</option>
+                                  <option value="10">10</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col mb-2">
+                    <div class="card" style="width: 10rem;background-color: rgb(247, 247, 247);">
+                        <img src="https://uppic.cc/d/6sGA" class="card-img-top" alt="">
+                        <div class="card-body" style="text-align: center;">
+                            <p class="card-text">คลังเก็บเสบียง</p>
+                            <div class="form-group">
+                                <select class="form-control" style="background-color: rgb(34, 34, 34);color: aliceblue;" id="sbaing_select">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                  <option value="2">2</option>
+                                  <option value="3">3</option>
+                                  <option value="4">4</option>
+                                  <option value="5">5</option>
+                                  <option value="6">6</option>
+                                  <option value="7">7</option>
+                                  <option value="8">8</option>
+                                  <option value="9">9</option>
+                                  <option value="10">10</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <div class="row row-cols-1 row-cols-md-2 mt-2">
+
+                <div class="col mb-2">
+                    <div class="card" style="width: 10rem;background-color: rgb(247, 247, 247);">
+                        <img src="https://uppic.cc/d/6sGW" class="card-img-top" alt="">
+                        <div class="card-body" style="text-align: center;">
+                            <p class="card-text">โรงงานการค้า</p>
+                            <div class="form-group">
+                                <select class="form-control" style="background-color: rgb(34, 34, 34);color: aliceblue;" id="kanka_select">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                  <option value="2">2</option>
+                                  <option value="3">3</option>
+                                  <option value="4">4</option>
+                                  <option value="5">5</option>
+                                  <option value="6">6</option>
+                                  <option value="7">7</option>
+                                  <option value="8">8</option>
+                                  <option value="9">9</option>
+                                  <option value="10">10</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="col mb-2">
+                    <div class="card" style="width: 10rem;background-color: rgb(247, 247, 247);">
+                        <img src="https://uppic.cc/d/6sGY" class="card-img-top" alt="">
+                        <div class="card-body" style="text-align: center;">
+                            <p class="card-text">โรงงานอุปกรณ์</p>
+                            <div class="form-group">
+                                <select class="form-control" style="background-color: rgb(34, 34, 34);color: aliceblue;" id="oub_select">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                  <option value="2">2</option>
+                                  <option value="3">3</option>
+                                  <option value="4">4</option>
+                                  <option value="5">5</option>
+                                  <option value="6">6</option>
+                                  <option value="7">7</option>
+                                  <option value="8">8</option>
+                                  <option value="9">9</option>
+                                  <option value="10">10</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col mb-2">
+                    <div class="card" style="width: 10rem;background-color: rgb(247, 247, 247);">
+                        <img src="https://uppic.cc/d/6sGL" class="card-img-top" alt="">
+                        <div class="card-body" style="text-align: center;">
+                            <p class="card-text">คลังเก็บของ</p>
+                            <div class="form-group">
+                                <select class="form-control" style="background-color: rgb(34, 34, 34);color: aliceblue;" id="kong_select">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                  <option value="2">2</option>
+                                  <option value="3">3</option>
+                                  <option value="4">4</option>
+                                  <option value="5">5</option>
+                                  <option value="6">6</option>
+                                  <option value="7">7</option>
+                                  <option value="8">8</option>
+                                  <option value="9">9</option>
+                                  <option value="10">10</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col mb-2">
+                    <div class="card" style="width: 10rem;background-color: rgb(247, 247, 247);">
+                        <img src="https://uppic.cc/d/6sG7" class="card-img-top" alt="">
+                        <div class="card-body" style="text-align: center;">
+                            <p class="card-text">คอกปสุสัตว์</p>
+                            <div class="form-group">
+                                <select class="form-control" style="background-color: rgb(34, 34, 34);color: aliceblue;" id="pasusus_select">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                  <option value="2">2</option>
+                                  <option value="3">3</option>
+                                  <option value="4">4</option>
+                                  <option value="5">5</option>
+                                  <option value="6">6</option>
+                                  <option value="7">7</option>
+                                  <option value="8">8</option>
+                                  <option value="9">9</option>
+                                  <option value="10">10</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col mb-2">
+                    <div class="card" style="width: 10rem;background-color: rgb(247, 247, 247);">
+                        <img src="https://uppic.cc/d/6sG8" class="card-img-top" alt="">
+                        <div class="card-body" style="text-align: center;">
+                            <p class="card-text">คอกม้า</p>
+                            <div class="form-group">
+                                <select class="form-control" style="background-color: rgb(34, 34, 34);color: aliceblue;" id="kogma_select">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                  <option value="2">2</option>
+                                  <option value="3">3</option>
+                                  <option value="4">4</option>
+                                  <option value="5">5</option>
+                                  <option value="6">6</option>
+                                  <option value="7">7</option>
+                                  <option value="8">8</option>
+                                  <option value="9">9</option>
+                                  <option value="10">10</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col mb-2">
+                    <div class="card" style="width: 10rem;background-color: rgb(247, 247, 247);">
+                        <img src="https://uppic.cc/d/6sGC" class="card-img-top" alt="">
+                        <div class="card-body" style="text-align: center;">
+                            <p class="card-text">ที่พัก</p>
+                            <div class="form-group">
+                                <select class="form-control" style="background-color: rgb(34, 34, 34);color: aliceblue;" id="teepuk_select">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                  <option value="2">2</option>
+                                  <option value="3">3</option>
+                                  <option value="4">4</option>
+                                  <option value="5">5</option>
+                                  <option value="6">6</option>
+                                  <option value="7">7</option>
+                                  <option value="8">8</option>
+                                  <option value="9">9</option>
+                                  <option value="10">10</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col mt-3">
+                <div class="row">
+                    <button type="button" style="margin-left: 504px;width: 100px;" id="total_value_camp" class="btn btn-dark" onclick="total_value_all_camp()"> บันทึก </button>
+                </div>   
+            </div>
+            
+            <div class="col mt-3" >
+
+            </div>
+        </div>
+
+        <!-- เพิ่มข้อมูลทรัพยากร -->
+        <div class="tab-pane fade container edit_font_add_camp_infor" id="add_resource_information" role="tabpanel" aria-labelledby="contact-tab">
+
+            <div class="row row-cols-1 row-cols-md-2 mt-4">
+
+                <div class="col mb-2">
+                    <div class="card" style="width: 10rem;background-color: rgb(247, 247, 247);">
+                        <img src="https://uppic.cc/d/6tbG" class="card-img-top" alt="">
+                        <div class="card-body" style="text-align: center;">
+                            <p class="card-text">หินหยาบ</p>
+                            <form>
+                                <div class="form-group">
+                                    <input class="form-control" type="text" placeholder="จำนวนทั้งหมด" id="value_hin">
+                                </div>
+                            </form>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="col mb-2">
+                    <div class="card" style="width: 10rem;background-color: rgb(247, 247, 247);">
+                        <img src="https://uppic.cc/d/6tb3" class="card-img-top" alt="">
+                        <div class="card-body" style="text-align: center;">
+                            <p class="card-text">แร่เหล็ก</p>
+                            <form>
+                                <div class="form-group">
+                                    <input class="form-control" type="text" placeholder="จำนวนทั้งหมด" id="value_lek">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col mb-2">
+                    <div class="card" style="width: 10rem;background-color: rgb(247, 247, 247);">
+                        <img src="https://uppic.cc/d/6tbT" class="card-img-top" alt="">
+                        <div class="card-body" style="text-align: center;">
+                            <p class="card-text">แร่ทองแดง</p>
+                            <form>
+                                <div class="form-group">
+                                    <input class="form-control" type="text" placeholder="จำนวนทั้งหมด" id="value_tongdang">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col mb-2">
+                    <div class="card" style="width: 10rem;background-color: rgb(247, 247, 247);">
+                        <img src="https://uppic.cc/d/6tbD" class="card-img-top" alt="">
+                        <div class="card-body" style="text-align: center;">
+                            <p class="card-text">แร่ดีบุก</p>
+                            <form>
+                                <div class="form-group">
+                                    <input class="form-control" type="text" placeholder="จำนวนทั้งหมด" id="value_deebook">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col mb-2">
+                    <div class="card" style="width: 10rem;background-color: rgb(247, 247, 247);">
+                        <img src="https://uppic.cc/d/6tbX" class="card-img-top" alt="">
+                        <div class="card-body" style="text-align: center;">
+                            <p class="card-text">ไม้ซุง</p>
+                            <form>
+                                <div class="form-group">
+                                    <input class="form-control" type="text" placeholder="จำนวนทั้งหมด" id="value_maisung">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col mb-2">
+                    <div class="card" style="width: 10rem;background-color: rgb(247, 247, 247);">
+                        <img src="https://uppic.cc/d/6tbW" class="card-img-top" alt="">
+                        <div class="card-body" style="text-align: center;">
+                            <p class="card-text">ไม้เบา</p>
+                            <form>
+                                <div class="form-group">
+                                    <input class="form-control" type="text" placeholder="จำนวนทั้งหมด" id="value_maiboa">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <div class="row row-cols-1 row-cols-md-2 mt-2">
+
+                <div class="col mb-2">
+                    <div class="card" style="width: 10rem;background-color: rgb(247, 247, 247);">
+                        <img src="https://uppic.cc/d/6tb7" class="card-img-top" alt="">
+                        <div class="card-body" style="text-align: center;">
+                            <p class="card-text">ไม้ยืดหยุ่น</p>
+                            <form>
+                                <div class="form-group">
+                                    <input class="form-control" type="text" placeholder="จำนวนทั้งหมด" id="value_maiyun">
+                                </div>
+                            </form>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="col mb-2">
+                    <div class="card" style="width: 10rem;background-color: rgb(247, 247, 247);">
+                        <img src="https://uppic.cc/d/6tbU" class="card-img-top" alt="">
+                        <div class="card-body" style="text-align: center;">
+                            <p class="card-text">ไม้เนื้ออ่อน</p>
+                            <form>
+                                <div class="form-group">
+                                    <input class="form-control" type="text" placeholder="จำนวนทั้งหมด" id="value_mainoop">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col mb-2">
+                    <div class="card" style="width: 10rem;background-color: rgb(247, 247, 247);">
+                        <img src="https://uppic.cc/d/6tbd" class="card-img-top" alt="">
+                        <div class="card-body" style="text-align: center;">
+                            <p class="card-text">ป่าน</p>
+                            <form>
+                                <div class="form-group">
+                                    <input class="form-control" type="text" placeholder="จำนวนทั้งหมด" id="value_pan">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col mb-2">
+                    <div class="card" style="width: 10rem;background-color: rgb(247, 247, 247);">
+                        <img src="https://uppic.cc/d/6tv9" class="card-img-top" alt="">
+                        <div class="card-body" style="text-align: center;">
+                            <p class="card-text">สำลีฝ้าย</p>
+                            <form>
+                                <div class="form-group">
+                                    <input class="form-control" type="text" placeholder="จำนวนทั้งหมด" id="value_sumlee">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col mb-2">
+                    <div class="card" style="width: 10rem;background-color: rgb(247, 247, 247);">
+                        <img src="https://uppic.cc/d/6tvQ" class="card-img-top" alt="">
+                        <div class="card-body" style="text-align: center;">
+                            <p class="card-text">หญ้าป่า</p>
+                            <form>
+                                <div class="form-group">
+                                    <input class="form-control" type="text" placeholder="จำนวนทั้งหมด" id="value_yapa">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col mb-2">
+                    <div class="card" style="width: 10rem;background-color: rgb(247, 247, 247);">
+                        <img src="https://uppic.cc/d/6tvJ" class="card-img-top" alt="">
+                        <div class="card-body" style="text-align: center;">
+                            <p class="card-text">รังไหม</p>
+                            <form>
+                                <div class="form-group">
+                                    <input class="form-control" type="text" placeholder="จำนวนทั้งหมด" id="value_rangmai">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col mt-3">
+                <div class="row">
+                    <button type="button" style="margin-left: 504px;width: 100px;" id="total_value_all_resource" class="btn btn-dark" onclick="total_value_all_resource()" > บันทึก </button>
+                </div>   
+            </div>
+            
+            <div class="col mt-3" >
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+        
+    <script src="cal_show_lv_camp.js"></script>
+    <script src="lv-camp.js"></script>
+    <script src="Resource_infor.js"></script>
+    <script src="test_input_resource.js"></script>
+</body>
+
+</html>

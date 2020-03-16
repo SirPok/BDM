@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Kanit&display=swap');
+
+.background_after_nav, .color_bg_nav_item{
+    background-color: rgb(233, 233, 233);
+    font-family: 'Kanit', sans-serif;
+}
+
+.edit_font_add_camp_infor{
+    font-family: 'Kanit', sans-serif;
+}
+
+.font_size_edit{
+    font-size: 13px;
+}
+
+.upgrade_tan{
+    display: flex;
+}
